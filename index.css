@@ -225,10 +225,11 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
 }
 
 .packages .boxContainer .box{
-    flex: 1 1 300px;
+    width: 600px;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
@@ -304,6 +305,7 @@ section{
     display: flex; 
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: space-between;
 }
 
 .gallery .boxContainer .box{
@@ -569,3 +571,18 @@ footer .footerWrapper a.text:hover {
  }
 
 
+ @media (max-width: 1440px){
+ .packages .boxContainer .box{
+    width: 500px;
+}
+
+ }
+
+ 
+ @media (max-width: 1024px){
+    .packages .boxContainer .box{
+       width: 370px;
+       align-items: center;
+   }
+   
+    }
