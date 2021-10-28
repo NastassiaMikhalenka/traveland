@@ -1,4 +1,4 @@
-let searchBtn = document.querySelector("#search")
+let searchButton = document.querySelector("#search")
 let searchWrapper = document.querySelector(".searchWrapper")
 
 let formLoginBtn = document.querySelector("#user")
@@ -10,14 +10,14 @@ let navBar = document.querySelector(".navbar")
 let videoBtn = document.querySelectorAll(".vid-btn")
 
 window.onscroll = () => {
-    searchBtn.classList.remove('fa-times')
+    searchButton.classList.remove('fa-times')
     searchWrapper.classList.remove('active')
     menuBurger.classList.remove('fa-times')
     navBar.classList.remove('active')
 }
 
-searchBtn.addEventListener('click', () =>{
-    searchBtn.classList.toggle('fa-times')
+searchButton.addEventListener('click', () =>{
+    searchButton.classList.toggle('fa-times')
     searchWrapper.classList.toggle('active')
 })
 
